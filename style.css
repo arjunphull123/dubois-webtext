@@ -2,6 +2,15 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'VTC Du Bois Trial';
+  src: url('VTCDuBoisTrial-Bold.woff') format('woff'),
+       url('VTCDuBoisTrial-Regular.woff') format('woff'),
+       url('VTCDuBoisTrial-Bold.woff2') format('woff2'),
+       url('VTCDuBoisTrial-Regular.woff2') format('woff2')
+       ;
+}
+
 body {
   display: flex;
   flex-direction: column;
