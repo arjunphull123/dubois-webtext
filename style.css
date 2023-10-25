@@ -4,12 +4,20 @@
 
 @font-face {
   font-family: 'VTC Du Bois Trial';
-  src: url('VTCDuBoisTrial-Bold.woff') format('woff'),
-       url('VTCDuBoisTrial-Regular.woff') format('woff'),
-       url('VTCDuBoisTrial-Bold.woff2') format('woff2'),
-       url('VTCDuBoisTrial-Regular.woff2') format('woff2')
-       ;
+  src: url('public/VTCDuBoisTrial-Regular.woff2') format('woff2'),
+       url('public/VTCDuBoisTrial-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'VTC Du Bois Trial';
+  src: url('public/VTCDuBoisTrial-Bold.woff2') format('woff2'),
+       url('public/VTCDuBoisTrial-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 body {
   display: flex;
