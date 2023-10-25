@@ -112,7 +112,6 @@ h2.right-title {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.04125rem;
 }
 
 .section {
@@ -143,7 +142,6 @@ p.section-text {
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 2.34375rem */
-  letter-spacing: 0.04688rem;
 }
 
 .frame {
