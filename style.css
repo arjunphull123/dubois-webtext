@@ -1,5 +1,13 @@
 * {
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+:target::before {
+  content: '';
+  display: block;
+  height:      15.625rem;
+  margin-top: -15.625rem;
 }
 
 @font-face {
@@ -44,6 +52,11 @@ body {
   row-gap: 1.875rem;
   align-self: stretch;
   flex-wrap: wrap;
+}
+
+a.nav {
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .button {
