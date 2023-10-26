@@ -34,6 +34,56 @@ body {
   background-color: #FFE8DA;
 }
 
+.header {
+  display: flex;
+  width: 71.875rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+  position: sticky;
+  top: 0;
+  background-color: #FFE8DA;
+  z-index: 10;
+}
+
+.running-head {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  opacity: 0;
+  padding-bottom: 10px;
+  transition: opacity 0.5s ease;
+  visibility: hidden;
+}
+
+.running-head.visible {
+  opacity: 1;
+  display: flex;
+  visibility: visible;
+}
+
+p.running-title {
+  color: #654321;
+  text-align: center;
+  font-family: VTC Du Bois Trial;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p.running-sub {
+  color: #654321;
+  text-align: center;
+  font-family: VTC Du Bois Trial;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .body-container {
   display: flex;
   width: 71.875rem;
@@ -46,6 +96,8 @@ body {
 
 .nav-buttons {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 15px;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -83,10 +135,11 @@ a.nav {
 
 .title-section {
   display: flex;
+  width: 71.875rem;
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  align-self: stretch;
 }
 
 .titles {
