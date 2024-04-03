@@ -227,3 +227,194 @@ p.section-text {
   padding: 0;
   border: none;
 }
+
+.center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  color: #654321;
+  font-family: "VTC Du Bois Trial";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.viz-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+  align-self: stretch;
+}
+
+.viz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.viz-embed {
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.iframe {
+  flex: 1 0 0;
+  align-self: stretch;
+  background: #52FF00;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  color: #654321;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.newtab, .newtab:visited {
+  color: #654321;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.viz-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.subsection {
+  display: flex;
+  padding: 1.875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  align-self: stretch;
+  border-radius: 1.875rem;
+  border: 4px solid #654321;
+}
+
+.inspiration-body, .methodology-body, .reflection-body, .citations-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.subsection-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.ss-title {
+  flex: 1 0 0;
+
+  color: #654321;
+  font-family: "Public Sans";
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.chevron {
+  width: 2.3125rem;
+  height: 1.5625rem;
+  fill: #654321;
+}
+
+.inspiration-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  align-self: stretch;
+}
+
+.inspo-vid {
+  display: flex;
+  width: 50rem;
+  height: 28.125rem;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  background: #654321;
+}
+
+.inspo-embed {
+  width: 100%;
+  height: 100%;
+}
+
+.inspo-caption {
+  align-self: stretch;
+
+  color: #654321;
+  text-align: center;
+  font-family: "Public Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+}
+
+.ss-text {
+  align-self: stretch;
+
+  color: #654321;
+  font-family: "Public Sans";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 1.6875rem */
+}
+
+.viz-embed {
+  align-self: stretch;
+  aspect-ratio: 16/12.75;
+}
+
+.viz-embed iframe {
+  width: 110%;
+  height: 100%;
+  scale: 95%;
+  transform: translate(-5%);
+}
