@@ -198,6 +198,7 @@ h3 {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.0675rem;
+  text-align: center;
 }
 
 p.section-text {
@@ -242,6 +243,53 @@ p.section-text {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.5px;
+}
+
+.viz-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+  align-self: stretch;
+}
+
+.viz-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: flex;
+  padding: 0.3125rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 2.1875rem;
+  border: 3px solid #654321;
+  color: #654321;
+  font-family: "Public Sans";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.active {
+  border-radius: 2.1875rem;
+  background: #654321;
+  color: #FFE8DA;
+}
+
+.tab:hover {
+  transform: scale(1.025);
 }
 
 .viz-section {
@@ -318,10 +366,12 @@ p.section-text {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 0rem;
   align-self: stretch;
   border-radius: 1.875rem;
   border: 4px solid #654321;
+  transition: gap 0.3s ease;
+  transition-delay: 0.5s;
 }
 
 .inspiration-body, .methodology-body, .reflection-body, .citations-body {
@@ -338,13 +388,13 @@ p.section-text {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  padding-bottom: 0px;
 }
 
 .ss-title {
   flex: 1 0 0;
-
   color: #654321;
-  font-family: "Public Sans";
+  font-family: "VTC Du Bois Trial";
   font-size: 1.875rem;
   font-style: normal;
   font-weight: 700;
@@ -355,6 +405,28 @@ p.section-text {
   width: 2.3125rem;
   height: 1.5625rem;
   fill: #654321;
+  transition: transform 0.3s ease, scale 0.3s ease;
+  cursor: pointer;
+}
+
+.chevron:hover {
+  transform: scale(1.1);
+}
+
+.inspiration-body, .methodology-body {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, visibility 0.5s;
+  visibility: hidden;
+}
+
+.expanded {
+  max-height: 1000px; /* Adjust to fit content */
+  opacity: 1;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  visibility: visible;
+  gap: 1.25rem;
 }
 
 .inspiration-body {
