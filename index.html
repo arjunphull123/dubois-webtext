@@ -55,24 +55,24 @@
       <div class="viz-options">
         <h3>VISUALIZATIONS.</h3>
         <div class="viz-tabs">
-          <div class="tab active">Black Space and the Environment</div>
-          <div class="tab">Blossoming of Black Literature</div>
-          <div class="tab">Health and Income Across Race</div>
-          <div class="tab">Homeownership Across Race</div>
-          <div class="tab">Black Family Dynamics</div>
-          <div class="tab">Illiteracy Across Race</div>
-          <div class="tab">Incarceration Across Race</div>
+          <div class="tab active" id="blackSpace">Black Space and the Environment</div>
+          <div class="tab" id="blackLiterature">Blossoming of Black Literature</div>
+          <div class="tab" id="healthIncome">Health and Income Across Race</div>
+          <div class="tab" id="homeownership">Homeownership Across Race</div>
+          <div class="tab" id="familyDynamics">Black Family Dynamics</div>
+          <div class="tab" id="illiteracy">Illiteracy Across Race</div>
+          <div class="tab" id="incarceration">Incarceration Across Race</div>
         </div>
       </div>
 
       <div class="viz-section" id="black-space">
         <div class="viz">
           <div class="viz-embed">
-            <iframe src="https://dubois-black-space.netlify.app/" frameborder="0"></iframe>
+            <iframe id="viz-embed" src="https://dubois-black-space.netlify.app/" frameborder="0"></iframe>
           </div>
           <div class="options">
-            <p>Created by Arjun Phull</p>
-            <a href="https://dubois-black-space.netlify.app/" target="_blank" rel="noopener noreferrer" class="newtab">Open this visualization in a new tab</a>
+            <p id="author">Created by Arjun Phull</p>
+            <a href="https://dubois-black-space.netlify.app/" target="_blank" rel="noopener noreferrer" class="newtab" id="newtab">Open this visualization in a new tab</a>
           </div>
         </div>
         <div class="viz-body">
@@ -85,10 +85,10 @@
             </div>
             <div class="inspiration-body">
               <div class="inspo-vid">
-                <iframe class="inspo-embed" src="https://www.youtube.com/embed/erZ-Q_Doluw?si=VbRScsZRYV4P0jiK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="inspo-embed" id="inspo-embed" src="https://www.youtube.com/embed/erZ-Q_Doluw?si=VbRScsZRYV4P0jiK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <p class="inspo-caption">Du Bois visualized demographics among Black Philadelphians in engaging and intuitive ways.</p>
-              <p class="ss-text">
+              <p class="inspo-caption" id="inspo-caption">Du Bois visualized demographics among Black Philadelphians in engaging and intuitive ways.</p>
+              <p class="ss-text" id="inspo">
                 Prior to his contributions to the Exposition des Negres d'Amérique in 1900, W.E.B. Du Bois conducted the first sociological case study of an American urban community in
                  his 1899 book, The Philadelphia Negro: A Social Study. As highlighted by Aldon Morris, “the achievement of The Philadelphia Negro was that it was steeped in empirical 
                  data with charts and graphs, which enabled Du Bois to chronicle and analyze the experience of Black Philadelphians at the turn of the twentieth century.” 
@@ -97,7 +97,7 @@
                  Black people still had a shorter life expectancy in comparison to white people and fared worse than whites across the majority of 32 examined measures of health according 
                  to the Kaiser Family Foundation. Between 2019 and 2020, the life expectancy for all races/ethnicities declined. However, Black people saw a decrease from 74.7 to 71.8 years.
               </p>
-              <p class="ss-text">Add some text here relating to the purpose of our data visualization.</p>
+              <p class="ss-text" id="purpose">Add some text here relating to the purpose of our data visualization.</p>
             </div>
           </div>
           <div class="methodology subsection">
@@ -108,7 +108,7 @@
               </svg>
             </div>
             <div class="methodology-body">
-              <p class="ss-text">
+              <p class="ss-text" id="methodology">
                 We developed <i>Black Space and the Environment</i> using a 
               </p>
             </div>
