@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('#inspo-caption').innerHTML = inspoCaption
       document.querySelector('#inspo').innerHTML = inspoText
       document.querySelector('#purpose').innerHTML = purposeText
-      document.querySelector('#methodology').innerHTML = methodologyText
+      document.querySelector('#methodology-text').innerHTML = methodologyText
     }
 
     tabs.forEach(tab => {
