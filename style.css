@@ -3,12 +3,7 @@
   scroll-behavior: smooth;
 }
 
-:target::before {
-  content: '';
-  display: block;
-  height:      15.625rem;
-  margin-top: -15.625rem;
-}
+
 
 @font-face {
   font-family: 'VTC Du Bois Trial';
@@ -193,6 +188,7 @@ h2.right-title {
   align-items: flex-start;
   gap: 1.25rem;
   align-self: stretch;
+  scroll-margin-top: 9rem;
 }
 
 h3 {
@@ -368,7 +364,7 @@ p.section-text {
 
 .subsection {
   display: flex;
-  padding: 1.875rem;
+  padding: 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;

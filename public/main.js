@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('#inspo-caption').innerHTML = inspoCaption
       document.querySelector('#inspo').innerHTML = inspoText
       document.querySelector('#purpose').innerHTML = purposeText
+      // Reference the innerHTML of the instructions section.
       document.querySelector('#methodology-text').innerHTML = methodologyText
     }
 
