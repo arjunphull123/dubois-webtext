@@ -114,7 +114,7 @@ a.nav {
 
 .button {
   display: flex;
-  padding: 0.3125rem 1rem;
+  padding: 0.3125rem 2rem;
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
@@ -167,7 +167,7 @@ h2.right-title {
   font-size: 5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 6rem */
+  line-height: 115%; /* 6rem */
 }
 
 .authors {
@@ -209,6 +209,16 @@ p.section-text {
   font-family: Public Sans;
   font-size: 1.125rem;
   font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 2.34375rem */
+}
+
+p.editor-note {
+  align-self: stretch;
+  color: red;
+  font-family: Public Sans;
+  font-size: 1.125rem;
+  font-style: italic;
   font-weight: 400;
   line-height: 150%; /* 2.34375rem */
 }
