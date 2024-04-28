@@ -386,7 +386,7 @@ p.editor-note {
   transition-delay: 0.5s;
 }
 
-.inspiration-body, .methodology-body, .reflection-body, .citations-body {
+.inspiration-body, .methodology-body, .reflection-body, .citations-body, #instructions {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -521,4 +521,8 @@ p.ref {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.indent {
+  padding-left: 3rem;
 }
