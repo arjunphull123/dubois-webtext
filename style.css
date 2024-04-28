@@ -502,3 +502,23 @@ p.editor-note {
   scale: 95%;
   transform: translate(-5%);
 }
+
+p.ref {
+  padding-left: 3rem;
+  text-indent: -3rem;
+  font-size: 0.75rem;
+}
+
+.ref-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.left-col, .right-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
