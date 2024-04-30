@@ -14,24 +14,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all chevron SVG elements
     const chevrons = document.querySelectorAll('.chevron');
 
-    // Function to toggle visibility and rotate chevron
     function toggleSection(event) {
         const chevron = event.currentTarget;
         const subsectionBody = chevron.parentElement.nextElementSibling;
         const subsection = subsectionBody.parentElement
 
-        // Toggle a class for rotating the chevron
         chevron.style.transform = chevron.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
 
-        // Toggle the 'expanded' class for the adjacent section body
         subsectionBody.classList.toggle('expanded');
         subsection.classList.toggle('expanded')
     }
 
-    // Add click event listeners to each chevron
     chevrons.forEach(chevron => {
         chevron.addEventListener('click', toggleSection);
     });
@@ -104,12 +99,13 @@ const vizRefs = {
 
   'homeownership': ['https://dubois-homeownership.netlify.app/',
                       'Arjun Phull',
-                      'https://www.youtube.com/embed/erZ-Q_Doluw?si=VbRScsZRYV4P0jiK',
-                      'Need a video for Homeownership!',
-                      "Acres of land owned by Negroes in Georgia implements the color red and a simple bar graph to highlight the (mostly) steady increases in the amount of land owned by Black Georgians between 1874 and 1899. Interestingly, the highly legible graph shares an uncanny resemblance with the shape of Georgia. The obstacles facing Black Americans to buy land and rent or buy a home continued to hinder an entire race of people from the financial vehicle most Americans used to build generational wealth. The 1968 Fair Housing Act created more favorable conditions for Black Americans across the country by protecting us from discrimination during the home buying process. However, by 2019, Black homeownership had fallen to 40.6%, making the gap between white and Black ownership larger than in 1960.",
-                      'Add some text here relating to the purpose for Homeownership.',
-                      'INSTRUCTIONS for Homeownership',
-                      'We developed <i>Homeownership Across Race</i> using a'],
+                      'https://www.youtube.com/embed/wnM5Xiyq07c?si=6DKWWgmnAkM3c1wz',
+                      'Du Bois visualized the wealth and income of Black families in creative and engaging ways.',
+                      "This visualization was inspired by Du Bois’s <i>Income and Expenditure of 150 Negro Families in Atlanta, GA, USA</i>, a chart that broke down the average income and spending habits of Black families across the socioeconomic spectrum. In this chart, Du Bois and his team explored the stratification of Black wealth, enumerating the categories on which Black families in varying wealth brackets spent their money. This chart provided commentary on Black homeownership by pointing out which income brackets spent the most and the least on rent. Du Bois also explored the idea of Black land ownership in another of his visualizations, <i>Valuation of Town and City Property Owned By Georgia Negroes</i>. In this chart, a line graph highlights the growth in Black land ownership over the late 19th century and situates this changing data within historical context. In envisioning my visualization, I wanted to highlight the dynamic, multicolored approach that Du Bois took in his charts. I used different colored homes arranged in a neighborhood to illustrate changing rates of homeownership across races. The colors of each home were selected from Du Bois’s original color palette, in homage to the distinctive style that he maintained throughout his work. The size of each home changes over time, reflecting the functionality of a bar chart within a much more engaging form factor.",
+                      'This visualization is designed to highlight the comparative growth of homeownership across race over the past few decades. As you explore this interactive data visualization, consider the story that the data is telling. You can move the neighborhood around to view it at different angles and really examine the spatial differences in size of each of the houses. This may help you answer questions such as, “Which groups have seen homeownership steadily grow over time”, “Which groups have seen faster or slower growth than others?”, and furthermore, “What institutional factors might be driving these differences?”.',
+                      'This visualization is optimized for a desktop/laptop computer and does not work on mobile devices. You can click and drag to rotate the neighborhood, or scroll to zoom in or out. You can move the slider to change the current year, allowing you to explore how homeownership rates change over time.',
+                      'To build this visualization, I imported 3D models of each house in .gltf format using a JavaScript library called Three.js. I also designed a custom 3D model for the cul-de-sac. The raw data for this model came from the U.S. Census Bureau in percentage form. I used Python to import the data as a CSV. Then, I created a dictionary with each race as a key. Within that dictionary, each race mapped to its own dictionary. Within those inner dictionaries, I had each year map to that race’s percentage of homeownership during that year. This was really useful, because it allowed me to get any datapoint within the original dataset just by specifying two parameters: the race and the year. Once I had workable values, I used Three.js and another JavaScript library called GSAP to read the input of the slider, and then grow or shrink the scale of each house according to the data. Lastly, I used HTML and CSS to wrap my data visualization within a web app.'
+                    ],
 
   'familyDynamics': ['https://dubois-family-dynamics.netlify.app/',
                       'Duo Bao',
@@ -118,7 +114,8 @@ const vizRefs = {
                       "This project was inspired by an in-depth analysis of existing data management systems for children in foster care, which found that fragmented and inaccessible data was one of the major barriers preventing social workers and policymakers from improving the foster care system. The complexity of the foster care system requires a high degree of transparency and immediate availability of data to better understand the distribution of children in foster care, their needs, and the effectiveness of services. To solve this problem, we decided to use advanced technical means, such as geographic information systems (GIS) and programming techniques, to create a comprehensive and intuitive data visualization platform. The goal of this platform is to aggregate state foster care child data and present it in an easy-to-understand manner to facilitate data comparison and analysis across state and national levels.",
                       'This project aims to improve public and professional visualization and understanding of U.S. foster care child statistics through maps and interactive tools. We are particularly focused on increasing the transparency and accessibility of data so that policymakers and social service providers can make decisions based on accurate and timely information. By integrating Mapbox and Python technologies, the project converts complex statistical data into easy-to-interpret geographical visualizations, which not only improves the accessibility of information, but also enhances the educational value of the data. Additionally, this combination of technologies has inspired social action and policy improvements, prompting greater attention to the well-being of children in foster care. Through precise and in-depth data presentation, the historical roots of racial inequality in the foster care system and its ongoing impact are revealed. Each data point on the map tells a story, and together they paint a historical picture of courage, resilience, and hope. By raising public awareness of this issue, we hope to stimulate wider social discussion and drive effective policy change to safeguard all children.',
                       '<p class="ss-text">There are multiple ways to interact with this visualization.</p> <p class="ss-text">On a computer (desktop or laptop):</p> <p class="ss-text indent">Each state on the map is marked with a pin. Users can click on the pins to bring up an information window with specific data on children in foster care in the state. This window provides the number of  children in foster care in the state, their age distribution, and other important statistics.</p> <p class="ss-text indent">When the user moves the mouse on the map, the corresponding state will be highlighted, clearly indicating which state the user is currently viewing. This immediate visual feedback helps users intuitively identify and navigate areas of the data that interest them.</p> <p class="ss-text indent">The map is not limited to a flat view, but also provides a rotating interactive globe, allowing users to change the  perspective by dragging and view the data from different angles. This three- dimensional view can help users better understand the distribution of data  across the country.</p> <p class="ss-text">On a handheld device (tablet or mobile phone):</p> <p class="ss-text indent">On mobile devices, users can use common touch screen gestures, such as pinching with two fingers to zoom in and out of the map or rotating two fingers to change the viewing angle. This intuitive and interactive approach makes it extremely easy to explore and share data in different environments.</p> <p class="ss-text indent">When viewing data for a specific state, users can also leverage their mobile device’s sharing capabilities to quickly share foster care statistics with colleagues or social media to promote public discussion and awareness.</p>',
-                      "The technical implementation of the project is based on two core technologies: Mapbox and Python. First, we collected data on foster children in each state through official channels and public databases, including information on age, gender, race, and geographic location. Next, we used Python for data cleaning and preprocessing, such as removing duplicates, filling missing values, and converting data formats. The cleaned data was uploaded to the Mapbox platform, and we built an interactive map based on it. Through scripts written in Python, we added a variety of interactive features such as data filtering, region highlighting, and detailed information display, making the final visualization not only  intuitive but also feature-rich. In addition, we also used OpenAI's ChatGPT to assist in solving problems encountered in programming, thus improving development efficiency and code quality."],
+                      "The technical implementation of the project is based on two core technologies: Mapbox and Python. First, we collected data on foster children in each state through official channels and public databases, including information on age, gender, race, and geographic location. Next, we used Python for data cleaning and preprocessing, such as removing duplicates, filling missing values, and converting data formats. The cleaned data was uploaded to the Mapbox platform, and we built an interactive map based on it. Through scripts written in Python, we added a variety of interactive features such as data filtering, region highlighting, and detailed information display, making the final visualization not only  intuitive but also feature-rich. In addition, we also used OpenAI's ChatGPT to assist in solving problems encountered in programming, thus improving development efficiency and code quality."
+                    ],
 
   'illiteracy': ['https://8th.io/3h7mn',
                       'Anuj Gupta',
@@ -141,5 +138,3 @@ const vizRefs = {
 
                     ],
 }
-
-switchContent('blackSpace')
